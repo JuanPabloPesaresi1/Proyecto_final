@@ -1,0 +1,394 @@
+* {
+  font-family: 'Source Code Pro', monospace;
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  background-image: url(../assets/Captura-de-pantalla-2017-03-30-a-las-11.59.05.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
+
+.img {
+  width: 160px; }
+
+.contenedor__img {
+  width: 100%;
+  height: 100%; }
+
+h1 {
+  color: #000;
+  flex-basis: 100%;
+  text-align: center;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 40px; }
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+  color: #fff; }
+
+.icono {
+  color: #fff;
+  font-size: 20px;
+  padding: 0.2rem;
+  transition: transforme 350ms;
+  opacity: 0.5; }
+
+.icono:hover {
+  cursor: pointer;
+  transform: translateY(-10px);
+  opacity: 1; }
+
+.footer_nombreJuan {
+  font-size: 13px;
+  font-weight: bold;
+  font-family: 'Source Code Pro', monospace; }
+
+section {
+  background-color: transparent;
+  background: transparent; }
+
+.contenedor__img {
+  width: 100%;
+  height: 100%; }
+
+.contenedor {
+  margin-top: 1rem;
+  left: 490px;
+  width: 50%;
+  position: relative;
+  height: 450px;
+  background-color: transparent;
+  background: transparent; }
+
+.botones {
+  width: 70px;
+  height: 70px;
+  font-size: 30px;
+  line-height: 70px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease; }
+
+.botones:hover {
+  cursor: pointer;
+  transform: scale(1.2, 1.2); }
+
+.atras {
+  left: 2%;
+  top: calc(50% - 70px); }
+
+.adelante {
+  right: 2%;
+  top: calc(50% - 70px); }
+
+.titulo {
+  color: #ffff;
+  flex-basis: 100%;
+  text-align: center;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 50px; }
+
+.populares {
+  display: flex;
+  align-items: row;
+  justify-content: space-evenly; }
+  .populares__cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .populares__cards .populares__boton {
+      cursor: pointer;
+      padding: 0.5em;
+      border-radius: 5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      border: 2px solid #ff4800;
+      background-color: #00273e; }
+      .populares__cards .populares__boton a {
+        color: #fff; }
+    .populares__cards .populares__boton:hover {
+      transform: translateY(-6px); }
+    .populares__cards .populares__h3 {
+      font-size: 20px; }
+
+header {
+  background-color: #2c2c2c; }
+  header .titulo__imagen {
+    background-image: url(../../assets/JEJOX.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    header .titulo__imagen h1 {
+      display: inline; }
+  header .header__nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px; }
+  header .nav__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000; }
+    header .nav__list li:hover > ul {
+      display: block; }
+    header .nav__list .list__submenu {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      background: #2c2c2c;
+      display: none;
+      width: 150px;
+      padding: auto; }
+      header .nav__list .list__submenu li {
+        width: auto; }
+  header .list__link {
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    padding: 20px;
+    display: block;
+    opacity: 0.6; }
+    header .list__link:hover {
+      color: #fff;
+      opacity: 1; }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background: #2c2c2c; }
+  .footer__info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row; }
+  .footer__dev {
+    font-size: 13px;
+    background: #01c5f5;
+    background: radial-gradient(circle, #01c5f5 45%, #090979 100%);
+    text-align: center;
+    font-family: 'Source Code Pro', monospace; }
+  .footer__redes ul {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row; }
+  .footer__faq {
+    padding-left: 1rem;
+    text-decoration: none; }
+  .footer .horarios__titulo {
+    font-size: 25px;
+    color: goldenrod;
+    font-family: 'Source Code Pro', monospace; }
+  .footer .horarios__subHorarios {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+    opacity: 0.5; }
+  .footer .extra {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Source Code Pro', monospace;
+    opacity: 0.5;
+    font-size: 15px; }
+  .footer .extra:hover {
+    opacity: 1; }
+  .footer__suscribite {
+    text-align: right;
+    margin-right: 310px; }
+    .footer__suscribite .suscribite__titulo {
+      color: goldenrod;
+      font-size: 20px; }
+    .footer__suscribite input {
+      padding: 0.6rem; }
+
+.contenedorEstreno {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; }
+  .contenedorEstreno .contenedorEstreno__cards, .contenedorEstreno .contenedor__accion,
+  .contenedorEstreno .contenedor__ninios {
+    display: flex;
+    justify-content: space-evenly; }
+
+.rapidosyfuriosos-maps {
+  background-image: url(../../assets/rapidosyfuriosos.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 288px;
+  width: 195px; }
+
+.purga-maps {
+  background-image: url(../../assets/purga.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 288px;
+  width: 195px; }
+
+.escape-maps {
+  background-image: url(../../assets/escape.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 288px;
+  width: 195px; }
+
+.escuadron-maps {
+  background-image: url(../../assets/escuadron.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 288px;
+  width: 195px; }
+
+.jefe-maps {
+  background-image: url(../../assets/jefe.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 288px;
+  width: 195px; }
+
+.croods-maps {
+  background-image: url(../../assets/croods.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 288px;
+  width: 195px; }
+
+.peter-maps {
+  background-image: url(../../assets/peter.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 288px;
+  width: 195px; }
+
+.jungla-maps {
+  background-image: url(../../assets/jungla.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 288px;
+  width: 195px; }
+
+.espace-maps {
+  background-image: url(../../assets/espace.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 288px;
+  width: 195px; }
+
+.viejos-maps {
+  background-image: url(../../assets/viejos.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 288px;
+  width: 195px; }
+
+.snake-maps {
+  background-image: url(../../assets/snake.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 288px;
+  width: 195px; }
+
+.silencio-maps {
+  background-image: url(../../assets/silencio.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 288px;
+  width: 195px; }
+
+.combos__tabla {
+  font-size: 25px;
+  text-align: center;
+  margin: 227px auto;
+  background-color: #fff; }
+  .combos__tabla .combos__titulos {
+    color: #000;
+    font-family: 'Source Code Pro', monospace; }
+  .combos__tabla .combos__fila {
+    color: #000;
+    font-family: 'Source Code Pro', monospace; }
+
+.formContacto {
+  background-color: #24303c;
+  text-align: center;
+  box-shadow: 15px 13px 37px #000;
+  margin-top: auto;
+  border-radius: 6px;
+  margin: 73.8px auto;
+  width: 400px; }
+  .formContacto .form__titulo {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: white; }
+  .formContacto .form__mail {
+    font-size: 14px;
+    color: white;
+    margin-bottom: 10px; }
+  .formContacto .form_votacion {
+    font-size: 14px;
+    color: #fffde4; }
+  .formContacto .form__control {
+    width: 80%;
+    background-color: #24303c;
+    padding: 11px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    border: 1px solid #1f53c5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    margin: 0.4rem;
+    resize: none; }
+  .formContacto .form__boton {
+    cursor: pointer;
+    width: 55%;
+    height: 30px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    background: linear-gradient(to left top, #1f53c5, #fffde4);
+    font-size: 15px; }
+    .formContacto .form__boton:hover {
+      cursor: pointer;
+      transform: translateY(-3px);
+      transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s; }
+
+.FAQ {
+  text-align: center;
+  box-shadow: 35px 33px 47px #000;
+  padding: 40px;
+  border-radius: 6px;
+  margin: 140.5px auto;
+  width: 550px;
+  height: 363px;
+  background: linear-gradient(to right top, #f00, #23fa22, #1f53c5, #fffde4); }
+  .FAQ .FAQ__preguntas {
+    font: 25px;
+    font-family: 'Source Code Pro', monospace; }
+  .FAQ .FAQ__respuestas {
+    color: #000;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 14px; }

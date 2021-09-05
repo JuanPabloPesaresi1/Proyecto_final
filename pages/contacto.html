@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/9c684e1dcb.js" crossorigin="anonymous"></script>
+    <link rel = "stylesheet" href = "..css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <meta name="description" content="En esta seccion el usuario nos puede mandar un mail con su consulta y sera respondida!" />
+    <meta name="keywords" content="CONTACTO,MAIL" />
+    <title>CineYa-Contacto</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <div>
+                <a href="../index.html">
+                    <img class="img" src="../assets/cineya.png" alt="LOGO">
+                </a>
+            </div>
+            <div class="titulo__imagen">
+                <h1>CONTACTO</h1>
+            </div>
+            <ul class="nav__list">
+                <li><a class="list__link" href="../index.html">INICIO</a></li>
+                <li><a class="list__link" href="./estrenos.html">ESTRENOS</a>
+                    <ul class="list__submenu">
+                        <li><a class="list__link" href="#">TERROR</a></li>
+                        <li><a class="list__link" href="#">ADULTOS</a></li>
+                        <li><a class="list__link" href="#">NIÑOS</a></li>
+                    </ul>
+                </li>
+                <li><a class="list__link" href="./combos.html">COMBOS</a>
+                    <ul class="list__submenu">
+                        <li><a class="list__link" href="#">NACHOS</a></li>
+                        <li><a class="list__link" href="#">PAPAS</a></li>
+                        <li><a class="list__link" href="#">MEGACOMBO</a></li>
+                    </ul>
+                </li>
+                <li><a class="list__link" href="./FAQ.html">FAQ</a>
+                </li>
+                <li><a class="list__link" href="#">CONTACTO</a>
+                    <ul class="list__submenu">
+                        <li><a class="list__link" href="#">QUEJAS</a></li>
+                        <li><a class="list__link" href="#">DENUNCIA</a></li>
+                        <li><a class="list__link" href="#">NOSOTROS</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="formContacto wow animate__bounceIn">
+            <form action="#" class="formContacto">
+            <h2 class="form__titulo">CONSULTA</h2>
+            <input type="text" class="form__control" placeholder="Nombre completo"><br>
+            <input type="text" class="form__control" placeholder="Apellidos"><br>
+            <input type="text" class="form__control" placeholder="Ingrese su localidad"><br>
+            <textarea class="form__control" name="text" id="comentario" cols="30" rows="10" placeholder="Escribe tu consulta aqui"></textarea><br>
+            <h3 class="form__mail">Desea recibir la respuesta por mail ? </h3>
+            <div class="form_votacion">Si
+                <input type="radio" name="acepta" value="1">
+            </div>
+            <div class="form_votacion">No
+                <input type="radio" name="acepta" value="1">
+            </div>
+            <input class="form__boton" type="submit" value="ENVIAR"><input class="form__boton" type="reset" value="LIMPIAR">
+            </form>
+        </div>
+        <script src="js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+    </section>
+    <footer class="footer">
+        <div class="footer__info">
+            <div class="footer__faq">
+                <ul>
+                    <li><a class="extra" href="#">Terminos  y condiciones</a></li>
+                    <li><a class="extra" href="#">FAQ</a></li>
+                    <li><a class="extra" href="#">Mapa del sitio</a></li>
+                    <li><a class="extra" href="../pages/error.html">Cookies</a></li>
+                    <li><a class="extra" href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer__redes">
+                <img class="img" src="../assets/cineya.png" alt="Logo">
+                <ul>
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f icono"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram icono"></i></a></li>
+                    <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter icono"></i></a></li>
+                    <li><a href="https://github.com/" target="_blank"><i class="fab fa-github icono"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer__horarios">
+                <h3 class="horarios__titulo">HORARIOS DE ATENCION</h3>
+                <p class="horarios__subHorarios">LUNES A VIERNES DE 9 AM A 11 PM</p>
+                <P class="horarios__subHorarios">SABADOS DE 12PM A 9 PM</P>
+            </div>
+        </div>
+        <div class="footer__suscribite">
+            <h3 class="suscribite__titulo">SUSCRIBITE</h3>
+            <form action="#">
+                <input type="email" placeholder="Ingrese su mail aqui">
+            </form>
+        </div>
+        <div class="footer__dev">
+            <p>Designed by <span class="footer_nombreJuan"> Juan Pablo Pesaresi</span></p>
+        </div>
+    </footer>
+    <script src="js/carrousel.js"></script>
+</body>
+</html>

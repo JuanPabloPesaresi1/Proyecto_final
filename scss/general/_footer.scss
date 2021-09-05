@@ -1,0 +1,69 @@
+// COMIENZO FOOTER
+.footer{
+    display: flex;
+    flex-direction: column;
+    background: rgb(44,44,44);
+
+    &__info{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+    }
+    &__dev{
+        font-size: 13px;
+        background: rgb(1,197,245);
+        background: radial-gradient(circle, rgba(1,197,245,1) 45%, rgba(9,9,121,1) 100%);
+        text-align: center;
+        font-family: 'Source Code Pro', monospace;
+    }
+    &__redes ul{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    
+    }
+    &__faq{
+        padding-left: 1rem;
+        text-decoration: none;
+    }
+    & .horarios__titulo{
+        font-size: 25px;
+        color: goldenrod;
+        font-family: 'Source Code Pro', monospace;
+    }
+    & .horarios__subHorarios{
+        font-size: 15px;
+        font-weight: bold;
+        color: white;
+        font-family: 'Source Code Pro', monospace;
+        opacity: 0.5;
+    }
+    & .extra{
+        text-decoration: none;
+        font-weight: bold;
+        color: #fff;
+        font-family: 'Source Code Pro', monospace;
+        opacity: 0.5;
+        font-size: 15px;
+    
+    }
+    & .extra:hover{
+        opacity: 1;
+    }
+    &__suscribite{
+        text-align: right;
+        margin-right: 310px;
+        
+        & .suscribite__titulo{
+            color: goldenrod;
+        font-size: 20px;
+        }
+        & input{
+        padding: 0.6rem;
+        }
+    
+        
+    }
+}
+// FIN DEL FOOTER

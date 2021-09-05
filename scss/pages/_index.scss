@@ -1,0 +1,36 @@
+.titulo{
+    color: #ffff;
+    flex-basis: 100%;
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 50px;
+}
+.populares{
+    display: flex;
+    align-items: row;
+    justify-content: space-evenly;
+    &__cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & .populares__boton{
+            cursor: pointer;
+            padding: 0.5em;
+            border-radius: 5px;
+            font-weight: 700;
+            text-transform: uppercase;
+            border:2px solid #ff4800;
+            background-color: #00273e;
+            & a{
+                color: #fff;
+            }
+        }
+        & .populares__boton:hover{
+            transform: translateY(-6px);
+        }
+        & .populares__h3{
+            font-size: 20px;
+        }
+        
+    }
+}

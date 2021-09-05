@@ -1,0 +1,14 @@
+.combos__tabla{
+    font-size: 25px;
+    text-align: center;
+    margin: 227px auto;
+    background-color: #fff;
+    & .combos__titulos{
+        color: #000;
+        font-family: 'Source Code Pro', monospace;
+    }
+    & .combos__fila{
+        color: #000;
+        font-family: 'Source Code Pro', monospace;
+    }
+}

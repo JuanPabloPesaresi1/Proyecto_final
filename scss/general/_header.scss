@@ -1,0 +1,65 @@
+// Comienzo header 
+header{
+    background-color:rgb(44,44,44);
+    & .titulo__imagen{
+        background-image: url(../../assets/JEJOX.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 250px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & h1{
+            display: inline;
+        }
+    }
+    & .header__nav{
+        display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    }
+    & .nav__list{
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        z-index: 1000;
+
+        & li:hover> ul{
+            display: block;
+        }
+
+        & .list__submenu{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            background: rgb(44,44,44);
+            display: none;
+            width: 150px;
+            padding: auto;
+
+                & li{
+                    width: auto;
+                }
+        
+        }
+
+    }
+    & .list__link{
+        text-decoration: none;
+        font-size: 18px;
+        color: #fff;
+        padding: 20px;
+        display: block;
+        opacity: 0.6;
+        
+            &:hover{
+            color: #fff;
+            opacity: 1;
+            }
+    }
+    
+}
+// Fin header

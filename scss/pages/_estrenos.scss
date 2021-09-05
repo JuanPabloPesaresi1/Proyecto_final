@@ -1,0 +1,43 @@
+.contenedorEstreno{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+    & .contenedorEstreno__cards{
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+.contenedor__accion,
+.contenedor__ninios{
+    @extend .contenedorEstreno__cards;
+}
+@each $imagenes in rapidosyfuriosos, purga, escape, escuadron{
+    .#{$imagenes}-maps{
+        background-image: url(../../assets/#{$imagenes}.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 288px;
+        width: 195px;
+    }
+}
+
+@each $imagenes2 in jefe, croods, peter, jungla{
+    .#{$imagenes2}-maps{
+        background-image: url(../../assets/#{$imagenes2}.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 288px;
+        width: 195px;
+    }
+}
+
+@each $imagenes3 in espace, viejos, snake, silencio{
+    .#{$imagenes3}-maps{
+        background-image: url(../../assets/#{$imagenes3}.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 288px;
+        width: 195px;
+    }
+}

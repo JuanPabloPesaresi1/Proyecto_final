@@ -1,0 +1,21 @@
+.FAQ{
+    text-align: center;
+    box-shadow: 35px 33px 47px #000;
+    padding: 40px;
+    border-radius: 6px;
+    margin: 140.5px auto;
+    width: 550px;
+    height: 363px;
+    background: linear-gradient(to right top,#f00,#23fa22,#1f53c5,#fffde4);
+
+    & .FAQ__preguntas{
+        font: 25px;
+        font-family: 'Source Code Pro', monospace;
+    }
+
+    & .FAQ__respuestas{
+        color: #000;
+        font-family: 'Source Code Pro', monospace;
+        font-size: 14px;
+    }
+}
