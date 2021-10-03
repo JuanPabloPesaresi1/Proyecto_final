@@ -1,0 +1,136 @@
+.fondo{
+    & .conteinerPrincipal{
+        // background-image: url(../../assets/fondo.png);
+        // background-repeat: no-repeat;
+        @media screen and (max-width:768px){
+            background-image:none;
+        }
+        & .padreEstrenos{
+            width: 960px;
+            padding: 25px 27px 0px 27px;
+            margin: auto;
+            height: auto;
+            background: #ffff;
+            @media screen and (max-width:768px){
+                width: 100vw;
+                padding: 0%;
+                height: 100%;
+            }
+            & .logo{
+                display: flex;
+                justify-content: center;
+                & .img__logo__movil{
+                    display: none;
+                    @media screen and (max-width:768px){
+                        width: 200px;
+                        justify-content: center;
+                        display: flex;
+                    }
+                }
+            }
+            & .bloque{
+                & .bloque-titulo {
+                    margin-top: 2rem;
+                    min-height: 35px;
+                    border-bottom: 1px solid #f2f2f2;
+                    position: relative;
+                    padding-top: 28px;
+                    font-size: 25px;
+                }
+                & .bloque-icon {
+                    position: absolute;
+                    top: 5px;
+                    left: 5px;
+                    @media screen and (max-width:768px){
+                        margin-top: 20px;
+                    }
+                }
+                & .bloque-titulo h2 {
+                    display: inline;
+                    color: rgb(255, 127,0);
+                    & .bloque .bloque-titulo b {
+                        font-style: normal;
+                        letter-spacing: -1px;
+                    }
+                    @media screen and (max-width:768px){
+                        text-align: center;
+                        display: inline;
+                        font-size: 28px;
+                        
+                    }
+                }
+                & .bannerCuidados{
+                    display: flex;
+                    justify-content: center;
+                    
+                    & img{
+                    width: 790px;
+                    @media screen and (max-width:768px){
+                        width: 330px;
+                    }
+                    }
+                }
+                & .compraEntradas{
+                    padding-top: 18px;
+                    padding-bottom: 15px;
+                    text-align: center;
+                    @media screen and (max-width:768px){
+                        & img{
+                            width: 330px;
+                        }
+                    }
+                } 
+            }
+            & .tarjetaPelicula{
+                padding: 20px 15px 20px 20px;
+                position: relative;
+                border-bottom: 1px dotted #c7c7c7;
+                display: flex;
+                flex-direction: row;
+                margin-block: 2rem;
+                @media screen and (max-width:768px){
+                    flex-direction: column;
+                    margin-inline: auto;
+                    align-items: center;
+                }
+                    & h3{
+                        color: rgb(255, 127,0);
+                        font-size: 2.4rem;
+                    }
+                    & .titulo__pelicula{
+                        font-size: 25px;
+                        letter-spacing: -1px;
+                        margin-left: 10px;
+                        padding-left: 15px;
+                        margin-top: 2px;
+                        background: url(../../assets/star-red.png) no-repeat 5px center;
+                        @media screen and (max-width:768px){
+                            background: none;
+                            font-size: 20px;
+                            text-align: center;
+                    
+                        }
+                    }
+                    & .titulo__datos{
+                        margin-top: 2.5rem;
+                    }
+                    & .descripcion__pelicula{
+                        margin: 10px 0;
+                        line-height: 110%;
+                        text-align: justify;
+                        font-family: Tahoma;
+                        color: #989898;
+                        font-size: 14px;
+                        margin-left: 26px;
+                        text-align: left;
+                    }
+                    & .descripcion__pelicula__extra{
+                        color: black;
+                        font-family: Tahoma;
+                        font-size: 15px;
+                        margin-top: 1rem;
+                    }
+            }
+        }
+    }
+}

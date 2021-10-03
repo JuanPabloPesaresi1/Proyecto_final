@@ -1,51 +1,164 @@
-.formContacto{
-    background-color: #24303c;
-    text-align: center;
-    box-shadow: 15px 13px 37px #000;
-    margin-top: auto;
-    border-radius: 6px;
-    margin: 73.8px auto;
-    width: 400px;
-    & .form__titulo{
-        font-size: 25px;
-        margin-bottom: 10px;
-        color: white;
-    }
-    & .form__mail{
-        font-size: 14px;
-        color: white;
-        margin-bottom: 10px;
-    }
-    & .form_votacion{
-        font-size: 14px;
-        color: #fffde4;
-    }
-    & .form__control{
-        width: 80%;
-        background-color: #24303c;
-        padding: 11px;
-        border-radius: 6px;
-        margin-bottom: 20px;
-        border: 1px solid #1f53c5;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 15px;
-        margin: 0.4rem;
-        resize: none;
-    }
-    & .form__boton{
-        cursor: pointer;
-        width: 55%;
-        height: 30px;
-        margin-top: 5px;
-        border-radius: 6px;
-        border: none;
-        color: white;
-        background: linear-gradient(to left top,#1f53c5,#fffde4);
-        font-size: 15px;
-        &:hover{
-            cursor: pointer;
-            transform: translateY(-3px);
-            transition: all cubic-bezier(0.215,0.610,0.355,1) .5s;
-        }
+.fondo{
+    & .conteinerPrincipal{
+            & .padreContacto{
+                width: 960px;
+                padding: 25px 27px 0px 27px;
+                margin: auto;
+                height: auto;
+                background: #ffff;    
+                @media screen and (max-width:768px){
+                    width: 100vw;
+                    padding: 0%;
+                    height: 100%;
+                }
+                & .logo{
+                    display: flex;
+                    justify-content: center;
+                    margin-top: -25px;
+                    @media screen and (max-width:768px){
+                        margin-top: 0px;
+                    } 
+                    & .img__logo__movil{
+                        width: 250px;
+                        align-items: center;
+                        text-align: center;
+                        @media screen and (max-width:768px){
+                            width: 200px;
+                            justify-content: center;
+                            display: flex;
+                        }   
+                    }
+                }
+                & .bloque{
+                    & .bloque-titulo {
+                        display: inline;
+                        margin-left: 150px;
+                        font-size: 25px;
+                        @media screen and (max-width:768px){
+                            text-align: center;
+                            font-size: 20px;
+                            color: #000;
+                            margin-left: 50px;
+                            
+                            & .img__logo{
+                                display: none;
+                            }
+                        }
+                        
+                    }
+                    & .bloque-icono {
+                        position: absolute;
+                        top: 5px;
+                        left: 5px;
+                    }
+                    & .bloque-titulo h2 {
+                        display: inline;
+                        color: rgb(255, 127,0);
+                        @media screen and (max-width:768px){
+                            text-align: center;
+                            color: rgb(255, 127,0);
+                            
+                        }
+                        & .bloque .bloque-titulo b {
+                            font-style: normal;
+                            letter-spacing: -1px;
+                        }
+                    }
+                    & .sidebar{
+                        display: flex;
+                        flex-direction:column;
+                        float: right;
+                        & .sidebar-titulo{
+                            margin-top: -35px;
+                            display: flex;
+                        }
+                        & .sidebar-beneficio{
+                            & h2{
+                                color: rgb(255, 127,0);
+                            }
+                            & b{
+                                margin: 5px;
+                                margin-top: 7px;
+                            }
+                            display: flex;
+                            margin-top: 20px;
+                        }
+                        & .sidebar-titulo2{
+                            display: flex;
+                            margin-top: 10px;
+                        }
+                        & .sidebar-beneficio2{
+                            & h2{
+                                color: rgb(255, 127,0);
+                            }
+                            & b{
+                                margin: 5px;
+                                margin-top: 7px;
+                            }
+                            display: flex;
+                            margin-top: 20px;
+                        }
+                        @media screen and (max-width:768px){
+                            display: none;
+                            
+                        }
+                    }
+                }
+                & .formContacto{
+                    background-color: #ffff;
+                    margin: 30px 0px 0px;
+                    width: 600px;
+                    text-align: center;
+                    @media screen and (max-width:768px){
+                        width: 100%;
+                    }
+                    & .form__titulo{
+                        font-size: 25px;
+                        margin-bottom: 10px;
+                        color: #000;
+                    }
+                    & .form__mail{
+                        font-size: 14px;
+                        color: #000;
+                        margin-bottom: 10px;
+                    }
+                    & .form_votacion{
+                        font-size: 14px;
+                        color: #000;
+                    }
+                    & .form__control{
+                        width: 80%;
+                        padding: 11px;
+                        border-radius: 6px;
+                        margin-bottom: 20px;
+                        border: 1px solid rgb(255, 127,0);
+                        font-size: 15px;
+                        margin: 0.4rem;
+                        resize: none;
+
+                        &:focus{
+                            color: rgb(255, 127,0);
+                        }
+                    }
+                    & .form__boton{
+                        cursor: pointer;
+                        width: 35%;
+                        height: 30px;
+                        // margin-top: 1px;
+                        border-radius: 100px;
+                        margin: 20px;
+                        border: none;
+                        color: #000;
+                        background: linear-gradient(to left top,rgb(247,238,220),rgb(255, 127,0));
+                        font-size: 16px;
+                        &:hover{
+                            cursor: pointer;
+                            transform: translateY(-3px);
+                            transition: all cubic-bezier(0.215,0.610,0.355,1) .5s;
+                        }
+                    }
+                    }
+                
+                }
     }
 }

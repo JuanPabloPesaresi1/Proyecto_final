@@ -1,43 +1,148 @@
-.contenedorEstreno{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+.fondo{
+    background-image: url(../../assets/5a40afaad58b5d2605a49a22bb8f8f68a.jpg);
+    & .conteinerPrincipal{
+        // background-image: url(../../assets/fondo.png);
+        // background-repeat: no-repeat;
+        @media screen and (max-width:768px){
+            background-image:none;
+        }
+
+        & .padreCartelera{
+            width: 960px;
+            padding: 25px 27px 0px 27px;
+            margin: auto;
+            height: auto;
+            background: #ffff;    
+            @media screen and (max-width:768px){
+                width: 100vw;
+                padding: 0%;
+                height: 100%;
+            }
+
+            & .logo{
+                display: flex;
+                justify-content: center;
     
-    & .contenedorEstreno__cards{
-        display: flex;
-        justify-content: space-evenly;
-    }
-}
-.contenedor__accion,
-.contenedor__ninios{
-    @extend .contenedorEstreno__cards;
-}
-@each $imagenes in rapidosyfuriosos, purga, escape, escuadron{
-    .#{$imagenes}-maps{
-        background-image: url(../../assets/#{$imagenes}.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 288px;
-        width: 195px;
-    }
-}
+                & .img__logo__movil{
+                    display: none;
+                    @media screen and (max-width:768px){
+                        width: 200px;
+                        justify-content: center;
+                        display: flex;
+                    }
+                }
+            }
 
-@each $imagenes2 in jefe, croods, peter, jungla{
-    .#{$imagenes2}-maps{
-        background-image: url(../../assets/#{$imagenes2}.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 288px;
-        width: 195px;
-    }
-}
-
-@each $imagenes3 in espace, viejos, snake, silencio{
-    .#{$imagenes3}-maps{
-        background-image: url(../../assets/#{$imagenes3}.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 288px;
-        width: 195px;
+                & .bloque{
+                    & .bloque-titulo{
+                        margin-top: 2rem;
+                        min-height: 35px;
+                        border-bottom: 1px solid #f2f2f2;
+                        position: relative;
+                        padding-left: 80px;
+                        padding-top: 28px;
+                        font-size: 25px;
+                    }
+                    & .bloque-icono {
+                        position: absolute;
+                        top: 5px;
+                        left: 5px;
+                    }
+                    & .bloque-titulo h2 {
+                        display: inline;
+                        color: rgb(255, 127,0);
+                        @media screen and (max-width:768px){
+                            text-align: center;
+                            
+                        }
+                        & .bloque .blque-titulo b {
+                            font-style: normal;
+                            letter-spacing: -1px;
+                        }
+                    }
+                    & .date {
+                        position: absolute;
+                        right: 5px;
+                        bottom: 10px;
+                        font-size: 14px;
+                        @media screen and (max-width:768px){
+                            display: none;
+                    
+                        }
+                    }
+                }
+                .tarjetaPelicula{
+                    padding: 20px 15px 20px 20px;
+                    position: relative;
+                    border-bottom: 1px dotted #c7c7c7;
+                    display: flex;
+                    flex-direction: row;
+                    margin-block: 2rem;
+                    @media screen and (max-width:768px){
+                        flex-direction: column;
+                        margin-inline: auto;
+                        align-items: center;
+                    }
+                        & h3{
+                            color: rgb(255, 127,0);
+                            font-size: 2.4rem;
+                        }
+                        & .titulo__pelicula{
+                            font-size: 25px;
+                            letter-spacing: -1px;
+                            margin-left: 10px;
+                            padding-left: 15px;
+                            margin-top: 2px;
+                            background: url(../../assets/star-red.png) no-repeat 5px center;
+                            @media screen and (max-width:768px){
+                                background: none;
+                                font-size: 20px;
+                                text-align: center;
+                        
+                            }
+                        }
+                        & .titulo__datos{
+                            margin-top: 2.5rem;
+                        }
+                        & .descripcion__pelicula{
+                            margin: 10px 0;
+                            line-height: 110%;
+                            text-align: justify;
+                            font-family: Tahoma;
+                            color: #989898;
+                            font-size: 14px;
+                            margin-left: 26px;
+                            text-align: left;
+                        }
+                        & .descripcion__pelicula__extra{
+                            color: black;
+                            font-family: Tahoma;
+                            font-size: 15px;
+                            margin-top: 1rem;
+                            }  
+                }
+                & .bannerCuidados{
+                    display: flex;
+                    justify-content: center;
+                    
+                    & img{
+                    width: 790px;
+                    @media screen and (max-width:768px){
+                        width: 330px;
+                    }
+                    }
+                }
+                & .compraEntradas{
+                    padding-top: 18px;
+                    padding-bottom: 15px;
+                    text-align: center;
+                    @media screen and (max-width:768px){
+                        & img{
+                            width: 330px;
+                        }
+                    }
+                }
+                
+        }
     }
 }

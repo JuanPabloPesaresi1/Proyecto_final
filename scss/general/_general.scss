@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'Source Code Pro', monospace;
+}
+body{
+    background-color:rgb(44,44,44);
+    // background-color: rgb(255, 127, 0) ;
+    // background-image: url(../../assets/profesion-cineasta-director-clasico-pelicula-vacia-haciendo-claqueta-o-pizarra-pelicula-aislada-pared-amarilla-concepto-industria-cine-produccion-video-vista-plana-endecha-superior-copia-espacio_80942-19.jpg);
+    // background-image: url(../../assets/movies-stalingrad-movie-wide-screen-high-definition-wallpaper-stalingrad-movie-widescreen-free-download-movies-wallpapers-high-quality-wallpapers-movies-wallpapers-for-laptop-movies-hd-wallpapers-movi-18.jpg);
+    // background-repeat: no-repeat;
+}
+ul{
+    list-style: none;
+}
+li{
+    list-style: none;
+}
+p{
+    font-size: 12px;
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+}
+a{
+    text-decoration: none;
+}
+.img__logo{
+    width: 150px;
+            top: 5px;
+            left: 5px;
+    @media screen and (max-width:768px){
+        width: 185px;
+    }
+    
+}
+.icono{
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    font-size: 20px;
+    padding: 0.2rem;
+    transition: transforme 350ms;
+    opacity: 0.5;
+    @media screen and (max-width:768px){
+        justify-content: space-between;
+    }
+}
+.icono:hover{
+    cursor: pointer;
+    transform: translateY(-10px);
+    opacity: 1;
+    
+}

@@ -1,9 +1,9 @@
-@import "./partials/_general.scss";
-@import "./partials/_carrousel.scss";
-@import "./pages/_index.scss";
-@import "./general/_header.scss";
-@import "./general/_footer.scss";
-@import "./pages/_estrenos.scss";
+@import "./general/_header";
+@import "./general/_general";
+@import "./partials/_carrousel";
+@import "./general/_footer";
+@import "./pages/_index";
+@import "./pages/_estrenos";
 @import "./pages/_combos.scss";
-@import "./pages/_contacto.scss";
-@import "./pages/_FAQ.scss"
+@import "./pages/_proximosEstrenos";
+@import "./pages/_contacto";

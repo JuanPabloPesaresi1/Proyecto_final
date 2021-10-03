@@ -6,115 +6,203 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://kit.fontawesome.com/9c684e1dcb.js" crossorigin="anonymous"></script>
-    <link rel = "stylesheet" href = "..css/animate.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <meta name="description" content="En esta seccion se encuentran los combos disponibles para adquirir antes de mirar la pelicula que desea!" />
-    <meta name="keywords" content="COMIDA,COMBOS,POCHOCLOS" />
-    <title>CineYa-Combos</title>
+    <meta name="description" content="Aqui podras ver los combos disponibles que tenemos a la venta para que disfrute mientras ve una pelicula!" />
+    <meta name="keywords" content="COMBOS,BEBIDAS,POCHOCLOS,FAMILIA" />
+    <title>CineYa!</title>
 </head>
 <body>
-    <header class="header">
-        <nav class="header__nav">
-            <div>
-                <a href="../index.html">
-                    <img class="img" src="../assets/cineya.png" alt="LOGO">
-                </a>
+    <header class="sticky">
+        <div class="navegador">
+            <div class="top-bar">
+                <div class="icon-menu" id="icon-menu">
+                    <div class="icon-menu__bar"></div>
+                </div>
             </div>
-            <div class="titulo__imagen">
-                <h1>COMBOS</h1>
-            </div>
-            <ul class="nav__list">
-                <li><a class="list__link" href="../index.html">INICIO</a></li>
-                <li><a class="list__link" href="./estrenos.html">ESTRENOS</a>
-                    <ul class="list__submenu">
-                        <li><a class="list__link" href="#">TERROR</a></li>
-                        <li><a class="list__link" href="#">ADULTOS</a></li>
-                        <li><a class="list__link" href="#">NIÑOS</a></li>
-                    </ul>
-                </li>
-                <li><a class="list__link" href="#">COMBOS</a>
-                    <ul class="list__submenu">
-                        <li><a class="list__link" href="#">NACHOS</a></li>
-                        <li><a class="list__link" href="#">PAPAS</a></li>
-                        <li><a class="list__link" href="#">MEGACOMBO</a></li>
-                    </ul>
-                </li>
-                <li><a class="list__link" href="./FAQ.html">FAQ</a>
-                </li>
-                <li><a class="list__link" href="./contacto.html">CONTACTO</a>
-                    <ul class="list__submenu">
-                        <li><a class="list__link" href="#">QUEJAS</a></li>
-                        <li><a class="list__link" href="#">DENUNCIA</a></li>
-                        <li><a class="list__link" href="#">NOSOTROS</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+            <nav>
+                <ul class="nav" id="main-menu">
+                    <li><img class="img__logo" src="../assets/cineya.png" alt=""></li>
+                    <li class="navitem "><a href="../index.html" class="navlink navlink--activado">INICIO</a></li>
+                    <li class="navitem"><a href="./estreno.html" class="navlink">CARTELERA</a></li>
+                    <li class="navitem"><a href="#" class="navlink">COMBOS</a></li>
+                    <li class="navitem"><a href="./FAQ.html" class="navlink">PROXIMOS ESTRENOS</a></li>
+                    <li class="navitem"><a href="./contacto.html" class="navlink">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <section>
-        <table border="8" cellpaddin="1" cellspacing="10" class="combos__tabla wow animate__bounceIn">
-            <tr class="combos__titulo">
-                <th>COMBOS</th>
-                <th>DESCRIPCION</th>
-                <th>PRECIO</th>
-            <tr>
-                <td class="combos__fila">COMBO 1</td>
-                <td class="combos__fila">Papas con cheddar mas bebidas a eleccion</td>
-                <td class="combos__fila">500$</td>
-            </tr>
-            <tr>
-                <td class="combos__fila">COMBO 2</td>
-                <td class="combos__fila">Pochoclos mas bebidas a eleccion</td>
-                <td class="combos__fila">400$</td>
-            </tr>
-            <tr>
-                <td class="combos__fila">COMBO 3</td>
-                <td class="combos__fila">Nachos con cheddar mas bebida a eleccion</td>
-                <td class="combos__fila">700$</td>
-            </tr>
-            
-        </table>
-        <script src="js/wow.min.js"></script>
-        <script>
-            new WOW().init();
-        </script>
-    </section>
-    <footer class="footer">
-        <div class="footer__info">
-            <div class="footer__faq">
-                <ul>
-                    <li><a class="extra" href="#">Terminos  y condiciones</a></li>
-                    <li><a class="extra" href="#">FAQ</a></li>
-                    <li><a class="extra" href="#">Mapa del sitio</a></li>
-                    <li><a class="extra" href="../pages/error.html">Cookies</a></li>
-                    <li><a class="extra" href="#">Contacto</a></li>
-                </ul>
+        <div class="fondo">
+            <div class="conteinerPrincipal">
+                <div class="padreCombos">
+                    <div class="logo">
+                        <a href="../index.html"><img class="img__logo__movil" src="../assets/cineya.png" alt=""></a>
+                    </div>
+                    <div class="contenedor">
+                            <div class="atras botones">
+                            </div>
+                        <div class="adelante botones">
+                        </div>
+                        <img class="contenedor__img" src="../assets/sintiempo.jpg" alt="BANNER#1" id="imagen">
+                    </div>
+                <div class="bloque peliculas">
+                    <div class="bloque-titulo">
+                        <img src="../assets/icon-supercombo.png" alt="" class="bloque-icon">
+                        <h2>SUPERCOMBOS</h2>
+                        <b>CINEYA!</b>
+                    </div>
+                </div> 
+                <div class="todoCombos">
+                <div class="contenedorCombos">
+                    <div class="combosPromociones">
+                        <img src="../assets/1170_img1.png" alt="">
+                        <div class="contenidoCombos">
+                            <h2 class="tituloCombos">COMBO PELICULA PAW PATROL</h2>
+                            <div class="detalles">
+                                <h3>Incluye: COMBO PELICULA</h3>
+                                <h3>1 POCHOCLO MEDIANO + 1 GASEOSA + 1 VASO</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="combosPromociones">
+                        <img src="../assets/1151_img1.png" alt="">
+                        <div class="contenidoCombos">
+                            <h2 class="tituloCombos">COMBO PELICULA MUJER MARAVILLA</h2>
+                            <div class="detalles">
+                                <h3>Incluye: COMBO PELICULA</h3>
+                                <h3>1 POCHOCLO MEDIANO + 1 GASEOSA + 1 VASO PREMIUM DE LA PELÍCULA</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="combosPromociones">
+                        <img src="../assets/1162_img1.png" alt="">
+                        <div class="contenidoCombos">
+                            <h2 class="tituloCombos">COMBO LATA UNIDOS</h2>
+                            <div class="detalles">
+                                <h3>Incluye: COMBO LATA</h3>
+                                <h3>1 LATA COLECCIONABLE CON POCHOCLOS + 2 GASEOSA</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="combosPromociones">
+                        <img src="../assets/1136_img1.png" alt="">
+                        <div class="contenidoCombos">
+                            <h2 class="tituloCombos">COMBO FAMILIAR</h2>
+                            <div class="detalles">
+                                <h3>Incluye: COMBO FAMILIA</h3>
+                                <h3>2 BALDE DE POCHOCLOS + 4 GASEOSAS</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="combosPromociones">
+                        <img src="../assets/1135_img1.png" alt="">
+                        <div class="contenidoCombos">
+                            <h2 class="tituloCombos">COMBO DUO</h2>
+                            <div class="detalles">
+                                <h3>Incluye: COMBO DUO</h3>
+                                <h3>1 BALDE DE POCHOCLOS + 2 GASEOSAS</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <div class="sidebar-titulo">
+                        <img src="../assets/icon-promos.png" alt="">
+                        <div class="sidebar-beneficio">
+                            <h2>BENEFICIOS</h2>
+                            <b>ESPECIALES</b>
+                        </div>
+                    </div>
+                    <img src="../assets/140_img1.jpg" alt="">
+                    <div class="sidebar-titulo2">
+                        <img src="../assets/icon-promos.png" alt="">
+                        <div class="sidebar-beneficio2">
+                            <h2>SUSCRIBITE</h2>
+                        </div>
+                    </div>
+                    <img src="../assets/sidebar-newsletter.png" alt="">
+                    <div class="sidebar-titulo2">
+                        <img src="../assets/icon-promos.png" alt="">
+                        <div class="sidebar-beneficio2">
+                            <h2>TRABAJO</h2>
+                        </div>
+                    </div>
+                    <img src="../assets/sidebar-rrhh.jpg" alt="">
+                    <br>
+                    <img src="../assets/post-talento.jpg" width="300px" alt="">
+                </div>
             </div>
-            <div class="footer__redes">
-                <img class="img" src="../assets/cineya.png" alt="Logo">
-                <ul>
-                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f icono"></i></a></li>
-                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram icono"></i></a></li>
-                    <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter icono"></i></a></li>
-                    <li><a href="https://github.com/" target="_blank"><i class="fab fa-github icono"></i></a></li>
-                </ul>
-            </div>
-            <div class="footer__horarios">
-                <h3 class="horarios__titulo">HORARIOS DE ATENCION</h3>
-                <p class="horarios__subHorarios">LUNES A VIERNES DE 9 AM A 11 PM</p>
-                <P class="horarios__subHorarios">SABADOS DE 12PM A 9 PM</P>
+                <div class="bannerCuidados">
+                    <img src="../assets/banner-protocolo.jpg" alt="">
+                </div>
+                <div class="compraEntradas">
+                    <img src="../assets/banner-homemiboleteria.jpg" alt="">
+                </div>
+                
             </div>
         </div>
-        <div class="footer__suscribite">
-            <h3 class="suscribite__titulo">SUSCRIBITE</h3>
-            <form action="#">
-                <input type="email" placeholder="Ingrese su mail aqui">
+    </div>
+    </section>
+        <div class="suscribite"> 
+            <p class="suscribite__titulo">SUSCRIBITE A CINEYA!</p>
+            <form class="suscribite__formulario" action="#">
+                <input class="suscribite__control" type="email" placeholder="INGRESÁ TU E-MAIL">
             </form>
         </div>
-        <div class="footer__dev">
-            <p>Designed by <span class="footer_nombreJuan"> Juan Pablo Pesaresi</span></p>
-        </div>
+        <footer class="footer">
+            <div class="footer__info">
+                <div class="footer__faq">
+                    <ul class="footer__faq__ul">
+                        <div>
+                            <h2 class="extra__titulo">CINEYA</h2>
+                            <li><a class="extra" href="#">info@cineya.com.ar</a></li>
+                            <br>
+                            <li><a class="extra" href="#">0800-777-4323</a></li>
+                            <br>
+                        </div>
+                        <div class="logoFooter">
+                            <img class="img__logo" src="../assets/cineya.png" alt="">
+                        </div>
+                        <div class="redesFooter">
+                            <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f icono"></i></a></li>
+                            <br>
+                            <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram icono"></i></a></li>
+                            <br>
+                            <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter icono"></i></a></li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="footer__faq">
+                    <ul class="footer__faq__ul">
+                        <h2 class="extra__titulo">NOSOTROS</h2>
+                        <li><a class="extra" href="#">Acerca de CINEYA</a></li>
+                        <br>
+                        <li><a class="extra" href="#">Sucursales</a></li>
+                        <br>
+                        <li><a class="extra" href="#">Contacto</a></li>
+                        <br>
+                        <li><a class="extra" href="#">Trabaja con nosotros</a></li>
+                        <br>
+                        <li><a class="extra" href="#">Terminos y condiciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer__faq">
+                    <ul class="footer__faq__ul">
+                        <h2 class="extra__titulo">INFORMACIÓN</h2>
+                        <li><a class="extra" href="#">Medios de pago</a></li>
+                        <br>
+                        <li><a class="extra" href="#">Preguntas frecuentes</a></li>
+                        <br>
+                        <li><a class="extra" href="#">Derechos</a></li>
+                        <br>
+                        <li><a class="extra" href="#">Política de privacidad</a></li>
+                        <br>
+                        <li><a class="extra" href="#">Cómo comprar</a></li>
+                    </ul>
+                </div>
+            </div>
+            
     </footer>
-    <script src="js/carrousel.js"></script>
+    <script src="../js/menu-dist.js"></script>
+    <script src="../js/carrousel.js"></script>
 </body>
 </html>

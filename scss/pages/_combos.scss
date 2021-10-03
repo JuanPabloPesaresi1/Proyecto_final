@@ -1,14 +1,173 @@
-.combos__tabla{
-    font-size: 25px;
-    text-align: center;
-    margin: 227px auto;
-    background-color: #fff;
-    & .combos__titulos{
-        color: #000;
-        font-family: 'Source Code Pro', monospace;
-    }
-    & .combos__fila{
-        color: #000;
-        font-family: 'Source Code Pro', monospace;
+.fondo{
+
+    & .conteinerPrincipal{
+        // background-image: url(../../assets/fondo.png);
+        // background-repeat: no-repeat;
+        @media screen and (max-width:768px){
+            background-image:none;
+        }
+        & .padreCombos{
+            width: 960px;
+            padding: 25px 27px 0px 27px;
+            margin: auto;
+            height: auto;
+            background: #ffff;
+            @media screen and (max-width:768px){
+                width: 100vw;
+                padding: 0%;
+                height: 100%;
+        
+            }
+            & .logo{
+                display: flex;
+                justify-content: center;
+    
+                & .img__logo__movil{
+                    display: none;
+                    @media screen and (max-width:768px){
+                        width: 200px;
+                        justify-content: center;
+                        display: flex;
+                    }
+                }
+            }
+            & .bloque{
+                & .bloque-titulo {
+                    margin-top: 2rem;
+                    min-height: 35px;
+                    position: relative;
+                    padding-left: 80px;
+                    padding-top: 28px;
+                    font-size: 25px;
+                }
+                & .bloque-icon {
+                    position: absolute;
+                    top: 5px;
+                    left: 5px;
+                    @media screen and (max-width:768px){
+                        margin-top: 20px;
+                    }
+                }
+                & .bloque-titulo h2 {
+                    display: inline;
+                    color: rgb(255, 127,0);
+                    & .bloque .bloque-titulo b {
+                        font-style: normal;
+                        letter-spacing: -1px;
+                    }
+                    @media screen and (max-width:768px){
+                        text-align: center;
+                        display: flex;
+                        
+                    }
+                }
+            }
+            & .todoCombos{
+                display:flex;
+                flex-direction: row;
+            
+                & .contenedorCombos{
+                    justify-self: flex-end;
+                    flex-basis: 100%;
+                
+                    & .combosPromociones{
+                        border-bottom: 1px dotted #c7c7c7;
+                        padding-bottom: 30px;
+                        margin-top: 10px;
+                        & img{
+                            margin-left: 5px;
+                            width: 570px;
+                            height: 220px;
+                            padding-left: 10px;
+                            @media screen and (max-width:768px){
+                                width: 340px;
+                                height: 130px;
+                                
+                            }
+                        }
+                        & .contenidoCombos{
+                            text-align: left;
+                            
+                            & .tituloCombos{
+                                font-size: 20px;
+                                padding-left: 25px;
+                                margin-top: 8px;
+                                background: url(../../assets/star-red.png) no-repeat 5px center;
+                                }
+                            & .detalles{
+                                padding-left: 12px;
+                                padding-top: 10px;
+                                    & h3{
+                                        font-size: 12px;
+                                        padding-left: 18px;
+                                        margin-bottom: 5px;
+                                        background: url(../../assets/star-red.png) no-repeat 5px center;
+                                    }
+                                }
+                            }        
+                        }
+                    }
+                    & .sidebar{
+                        display: flex;
+                        flex-direction:column;
+                        & .sidebar-titulo{
+                            margin-top: -65px;
+                            display: flex;
+                        }
+                        & .sidebar-beneficio{
+                            & h2{
+                                color: rgb(255, 127,0);
+                            }
+                            & b{
+                                margin: 5px;
+                                margin-top: 7px;
+                            }
+                            display: flex;
+                            margin-top: 20px;
+                        }
+                        & .sidebar-titulo2{
+                            display: flex;
+                            margin-top: 10px;
+                        }
+                        & .sidebar-beneficio2{
+                            & h2{
+                                color: rgb(255, 127,0);
+                            }
+                            & b{
+                                margin: 5px;
+                                margin-top: 7px;
+                            }
+                            display: flex;
+                            margin-top: 20px;
+                        }
+                        @media screen and (max-width:768px){
+                            display: none;
+                            
+                        }
+                    }
+            
+            }
+            & .bannerCuidados{
+                display: flex;
+                justify-content: center;
+                
+                & img{
+                width: 790px;
+                @media screen and (max-width:768px){
+                    width: 330px;
+                }
+                }
+            }
+            & .compraEntradas{
+                padding-top: 18px;
+                padding-bottom: 15px;
+                text-align: center;
+                @media screen and (max-width:768px){
+                    & img{
+                        width: 330px;
+                    }
+                }
+            }        
+        }
     }
 }

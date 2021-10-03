@@ -1,14 +1,17 @@
-let imagenes = ['assets/rapidos-y-furiosos-8-banner-criticsight-2017.png', 'assets/X_Men_Apocalypse_Banner_Poster-Movies_Widescreen_Wallpaper_1366x768.jpg', 'assets/-.....................................................................png']
+let imagenes = ['../assets/sintiempo.jpg','../assets/Escaperoom2.jpg','../assets/Spiritelindomable.jpg','../assets/norespires2.jpg','../assets/maligno.jpg','../assets/shagnchi.jpg','../assets/FAWAFWFAWFAW.jpg','../assets/peterrabbit.jpg','../assets/bannerva0072021.jpg','../assets/bannervavenomcarnage.jpg',]
     cont = 0;
 
-function carrousel(contenedor){
-    contenedor.addEventListener('click', e => {
+function carrousel(contenedor)
+{
+    contenedor.addEventListener('click', e => 
+    {
         let atras = contenedor.querySelector('.atras'),
             adelante = contenedor.querySelector('.adelante'),
             img = contenedor.querySelector('img'),
             tgt = e.target;
 
-        if(tgt == atras){
+        if(tgt == atras)
+        {
             if(cont > 0){
                 img.src = imagenes[cont - 1];
                 cont--;
@@ -16,7 +19,8 @@ function carrousel(contenedor){
                 img.src = imagenes[imagenes.length - 1];
                 cont = imagenes.length - 1;
             }
-        }else if(tgt == adelante){
+        }else if(tgt == adelante)
+        {
             if(cont < imagenes.length - 1){
                 img.src = imagenes[cont + 1];
                 cont++;

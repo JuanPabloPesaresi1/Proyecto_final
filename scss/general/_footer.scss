@@ -1,43 +1,86 @@
 // COMIENZO FOOTER
-.footer{
+.suscribite{
+        padding: 1rem;
+        background: rgb(255, 124,0);
+        
+        @media screen and (max-width:768px)
+            {
+                display: none;
+            }
+        & .suscribite__titulo{
+            font-size: 30px;
+            font-family: 'Source Code Pro', monospace;
+        }
+        &__formulario{
+            text-align: center;
+            padding: 21px;
+            border-radius: 6px;
+            font-size: 20px;
+        }
+        &__control{
+            width: calc(20% - 40px);
+            height: 40px;
+            position: relative;
+            background: transparent;
+            border: solid 1px #fff;
+            border-radius: 0;
+            display: block;
+            margin: 0 auto;
+            padding: 0;
+            text-align: center;
+            @media screen and (max-width:768px){
+                display: none;
+            }
+
+            &::placeholder{
+                color: black;
+                font-weight: bold;
+            }
+            
+        }
+    }
+    .footer{
     display: flex;
     flex-direction: column;
     background: rgb(44,44,44);
-
+    
     &__info{
         display: flex;
         justify-content: space-around;
         align-items: center;
         flex-direction: row;
-    }
-    &__dev{
-        font-size: 13px;
-        background: rgb(1,197,245);
-        background: radial-gradient(circle, rgba(1,197,245,1) 45%, rgba(9,9,121,1) 100%);
-        text-align: center;
-        font-family: 'Source Code Pro', monospace;
-    }
-    &__redes ul{
-        display: flex;
-        justify-content: space-around;
-        flex-direction: row;
-    
+        @media screen and (max-width:768px){
+            justify-content: center;
+            margin-top: 2rem;
+        }
     }
     &__faq{
-        padding-left: 1rem;
         text-decoration: none;
+        @media screen and (max-width:768px){
+            align-self: flex-start;
+            margin-bottom: 30px;
+            margin-top: -2rem;
+
+            &__ul{
+                display: flex;
+                flex-direction: column-reverse;
+                margin-top: 30px;
+            }
+            
+        }
     }
-    & .horarios__titulo{
-        font-size: 25px;
-        color: goldenrod;
+    & .extra__titulo{
+        color: rgb(255, 124,0);
+        font-size: 35px;
         font-family: 'Source Code Pro', monospace;
+        @media screen and (max-width:768px){
+            display: none;
+        }
     }
-    & .horarios__subHorarios{
-        font-size: 15px;
-        font-weight: bold;
-        color: white;
-        font-family: 'Source Code Pro', monospace;
-        opacity: 0.5;
+    & .redesFooter{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
     & .extra{
         text-decoration: none;
@@ -46,7 +89,10 @@
         font-family: 'Source Code Pro', monospace;
         opacity: 0.5;
         font-size: 15px;
-    
+        @media screen and (max-width:768px){
+            display: none;
+        }
+        
     }
     & .extra:hover{
         opacity: 1;
@@ -56,7 +102,7 @@
         margin-right: 310px;
         
         & .suscribite__titulo{
-            color: goldenrod;
+            color: rgb(255, 124,0);
         font-size: 20px;
         }
         & input{
